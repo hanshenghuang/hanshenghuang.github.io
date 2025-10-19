@@ -1,276 +1,328 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
 body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-.barcontainer{
-    width: 1024px;
-    padding-top: 20px;
-    padding-left: 42px;
-    padding-right: 42px;
-    margin: 0 auto;
-    font: 1em sans-serif;
-}
-
-.contentcontainer{
-    display: flex;
-    flex-direction: row;
-    width: 1024px;
-    height: 95%;
-    padding-left: 42px;
-    padding-right: 42px;
-    margin: 0 auto;
-    font: 1em sans-serif;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact{
-    display: flex;
-    padding-top: 10px;
-    justify-content: center;
-}
-
-
-.navbar{
-    height: 60px;
-    background: #fff;
-    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
-    font-size: 15px;
+/* Navbar Styles */
+.navbar {
     position: fixed;
     top: 0;
-    right: 0;
     left: 0;
-    z-index: 1030;
-    padding: 0 1rem;
-}
-
-.sectionsetting{
-    padding-top: 60px;
-    height: 100vh;
-}
-
-.header{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
     width: 100%;
-    font: 1em sans-serif;
+    background-color: #333;
+    padding: 1rem 0;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
 }
 
-.main{
+.barcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
     display: flex;
-    width: 940px;
-    align-items: center;
-    justify-content: center;
-}
-
-.experiencecontent{
-    display: flex;
-    flex-direction: column;
-    width: 940px;
-}
-
-.experiencecontent ul{
-    margin: 10px;
-}
-
-.portfoliocontent{
-    display: flex;
-    width: 1040px;
     justify-content: space-between;
+    align-items: center;
 }
 
-.singlecolumn{
+.header {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.profile{
-    text-align: center;
-    padding: 30px 10px;
-    position: relative;
+.header h1 {
+    flex: 0 1 auto;
+    margin: 0;
 }
 
-.aboutinfo{
-    text-align: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin-left: 80px;
-    position: relative;
+.header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    white-space: nowrap;
 }
 
-.profile li{
-    padding: 10px;
-}
-
-.profile li h2{
-    font: 1.5em sans-serif;
-    padding: 1px;
-}
-
-.experienceitem{
-    margin-left: 30px;
-    margin-top: 2rem;
-    padding-left: 1.25rem;
-    border-left: 2px solid ;
-}
-
-.titleanddate{
+.menu {
+    list-style-type: none;
     display: flex;
-    justify-content:space-between;
-    font-size: 1.35em;
+    gap: 2rem;
 }
 
-.jobdescription{
-    margin-top: 10px;
-    margin-left: 10px;
-    color: #696969;
+.menu li {
+    margin-left: 2rem;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
     font-size: 1.2rem;
 }
 
-.jobdescription li{
-    margin-bottom: 3px;
+.menu a:hover {
+    color: #ddd;
 }
 
-a{
-    color: var(--link-color);
-    outline: 0;
-    text-decoration: none;
-    overflow-wrap: break-word;
-    cursor: pointer;
+/* Section Styles */
+.sectionsetting {
+    padding: 5rem 0;
+    background-color: #fff;
 }
 
-.aboutinfo p
-{
-    font-weight: bold; 
+.contentcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.main {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Profile Section */
+.profile {
+    flex: 1;
+    max-width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.profile ul {
+    list-style-type: none;
+}
+
+.profile .mypicture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile h2 {
+    font-size: 1.5em;
+    margin-top: 1rem;
+}
+
+/* Contact List Styles */
+.contact {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.contact li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact i {
+    font-size: 2rem;
+    color: #333;
+    transition: color 0.3s;
+    display: inline-block;
+}
+
+/* About Info Section */
+.aboutinfo {
+    flex: 1;
+}
+
+.aboutinfo p {
+    font-weight: lighter;
     font-size: 1em;
     text-align: left;
 }
 
+.aboutinfo a {
+    color: #000; 
+    text-decoration: none; 
+}
 
+/* Experience Section */
+.experiencecontent {
+    margin-top: 2rem;
+}
 
-.menu{
+.experiencecontent ul {
+    list-style-type: none;
+}
+
+.experienceitem {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titleanddate {
     display: flex;
-    justify-content: flex-start;
-    width: 360px;
+    justify-content: space-between;
 }
 
-.menu li{
-    width: 120px;
-    text-align: center;
-}
-
-.header h1{
-    color: black;
-    font-size: 24px;
+.titleanddate p {
     font-weight: bold;
 }
 
-
-.menu li a{
-    text-decoration: none;
-    padding-top: 10px;
-    padding-bottom: 8px;
-    display: block;
-    color: #696969;
-    font-size: 16px;
+.jobdescription li {
+    margin-left: 2rem;
 }
 
-.mypicture{
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
-    object-fit: cover;
-    padding-bottom: 30px;
+/* Portfolio Section */
+.portfoliolist {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
 }
 
 .portfoliolist ul
 {
     display: flex;
     justify-content: space-between;
-    width: 800px;
     flex-wrap: wrap;
+    list-style-type: none;
 }
 
 .portfolioitem {
-    margin-bottom: 20px;
-    border: #EAF0ED 1px solid;
-    padding: 5px;
-    width: 350px;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 22%;
+    min-width: 250px;
+    box-sizing: border-box;
+}
+.portfolioitem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
 }
 
-.portfolioitem img{
-    max-width: 100%;
-    height: 190px;
-    border:0.5px #DCDCDC solid;
+.portfolioitem_description {
+    margin-bottom: 1rem;
 }
 
-.portfolioitem a{
+.portfolioitem h3 a {
+    color: #000;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.portfolioitem h3 a:hover {
     text-decoration: underline;
 }
 
-.portfolioitem_description{
-    display: flex;
-    flex-direction: column;
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .header h1 a {
+        font-size: 1.8rem;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .aboutinfo {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .contact {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .experienceitem {
+        padding: 1rem;
+    }
+
+    .portfoliolist {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .portfoliolist img {
+        width: 100%;
+    }
 }
 
-.portfolioitem_description h3{
-    font-size: 1.25rem;
-    padding: 10px;
-    padding-top: 15px;
-    font-weight: bold;
-}
+@media screen and (max-width: 480px) {
+    h2 {
+        font-size: 2rem;
+    }
 
-.portfolioitem_description span{
-    font-size: 1rem;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    color: #696969;
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    .menu {
+        display: block;
+        text-align: center;
+    }
+
+    .menu li {
+        margin-bottom: 1rem;
+    }
+
+    .aboutinfo p {
+        font-size: 0.9rem;
+    }
+
+    .portfolioitem_description h3 {
+        font-size: 1rem;
+    }
 }
