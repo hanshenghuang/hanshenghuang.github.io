@@ -12,6 +12,9 @@
         }</style>
     <script src="https://kit.fontawesome.com/9d807716a3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -23,7 +26,8 @@
                     <li><a href="#About">About</a></li>
                     <li><a href="#Experience">Experience</a></li>
                     <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Portfolio">Projects</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Education">Education</a></li>
                 </ul>
             </div>
         </div>
@@ -61,8 +65,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://zh-tw.facebook.com/HuangHanSheng.HHS" target="_blank" rel="noopener">
-                                    <i class="fa-brands fa-facebook-square fa-3x"></i>
+                                <a href="https://drive.google.com/file/d/1N6pVYRtPOm80zzj449w_M1J2u4zTk2ce/view?usp=sharing" target="_blank">
+                                    <i class="fa-solid fa-file-lines fa-3x"></i>
                                 </a>
                             </li>
                         </ul>
@@ -82,14 +86,12 @@
                     </p>
 
                     <p style="font-size:1.1em;line-height:1.8;text-align:left;">
-                        I am a Data Engineer with nearly four years of experience
-                        building data platforms, APIs, and analytics solutions at TSMC.
+                        I'm a Data Engineer with nearly four years of experience building data platforms, APIs, and analytics solutions at TSMC.
+                        I also have a background in supply chain analytics and mathematical optimization. 
+                    </p>
 
-                        My work focuses on data modeling, workflow orchestration,
-                        metadata management, data governance, and analytics engineering.
-
-                        Currently, I am pursuing an MS in Analytics at UC Berkeley and
-                        seeking Data Engineer opportunities in the United States.
+                    <p style="font-size:1.1em;line-height:1.8;text-align:left;">
+                        Currently, I'm pursuing an MS in Analytics at UC Berkeley, combining data engineering and analytics to solve data-driven problems.
                     </p>
 
                     <div style="display:flex;gap:40px;margin-top:40px;flex-wrap:wrap;">
@@ -134,27 +136,27 @@
 
                             <ul class="jobdescription">
                                 <li>
-                                    Built a Flask-based API platform serving over
+                                     - Built a Flask-based API platform serving over
                                     9 million requests per day with sub-second latency.
                                 </li>
 
                                 <li>
-                                    Standardized and maintained 500+ Apache Airflow
+                                     - Standardized and maintained 500+ Apache Airflow
                                     workflows processing over 300 GB of data daily.
                                 </li>
 
                                 <li>
-                                    Designed workforce analytics data models and
+                                     - Designed workforce analytics data models and
                                     reporting solutions supporting business decision-making.
                                 </li>
 
                                 <li>
-                                    Implemented metadata management and data governance
+                                     - Implemented metadata management and data governance
                                     solutions using DataHub.
                                 </li>
 
                                 <li>
-                                    Mentored junior engineers and interns on data
+                                     - Mentored junior engineers and interns on data
                                     engineering best practices.
                                 </li>
                             </ul>
@@ -165,7 +167,7 @@
                     <li>
                         <div class="experienceitem">
                             <div class="titleanddate">
-                                <p style="font-weight: bold;">AI Intern, Garmin Taiwan</p>
+                                <p style="font-weight: bold;">Associate Engineer, Garmin Taiwan</p>
                                 <p>08/2021 - 11/2021</p>
                             </div>
                             <ul class="jobdescription">
@@ -205,32 +207,68 @@
     </section>
 
     <section class="sectionsetting" id="Skills">
-
         <div class="contentcontainer">
+            <div class="skillscontent">
 
-            <h2 style="font-weight:bold;font-size:2.5em;">
-                Technical Skills
-            </h2>
+                <h2 class="section-title">Skills</h2>
 
-            <div class="skills-grid">
+                <div class="skills-columns">
 
-                <span class="skill-badge">Python</span>
-                <span class="skill-badge">SQL</span>
-                <span class="skill-badge">Apache Airflow</span>
-                <span class="skill-badge">dbt</span>
-                <span class="skill-badge">DuckDB</span>
-                <span class="skill-badge">Flask</span>
-                <span class="skill-badge">Docker</span>
-                <span class="skill-badge">Kubernetes</span>
-                <span class="skill-badge">Power BI</span>
-                <span class="skill-badge">Tableau</span>
-                <span class="skill-badge">ClickHouse</span>
-                <span class="skill-badge">Data Modeling</span>
+                    <!-- Programming -->
+                    <div class="skills-card">
+                        <div class="skills-title">Programming</div>
+                        <ul>
+                            <li><strong>Python</strong></li>
+                            <li><strong>SQL</strong></li>
+                            <li><strong>Java</strong></li>
+                            <li><strong>C++</strong></li>
+                            <li><strong>C#</strong></li>
+                            <li><strong>Bash</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Engineering -->
+                    <div class="skills-card">
+                        <div class="skills-title">Data Engineering</div>
+                        <ul>
+                            <li><strong>Airflow</strong></li>
+                            <li><strong>dbt</strong></li>
+                            <li><strong>ETL / ELT</strong></li>
+                            <li><strong>Data Modeling</strong></li>
+                            <li><strong>Flask / FastAPI</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Data & Cloud -->
+                    <div class="skills-card">
+                        <div class="skills-title">Databases & Cloud</div>
+                        <ul>
+                            <li><strong>PostgreSQL</strong></li>
+                            <li><strong>MySQL</strong></li>
+                            <li><strong>SQL Server</strong></li>
+                            <li><strong>Oracle</strong></li>
+                            <li><strong>ClickHouse</strong></li>
+                            <li><strong>Amazon S3</strong></li>
+                            <li><strong>Azure</strong></li>
+                        </ul>
+                    </div>
+
+                    <!-- Analytics & ML -->
+                    <div class="skills-card">
+                        <div class="skills-title"> Tools & BI</div>
+                        <ul>
+                            <li><strong>Docker / Kubernetes</strong></li>
+                            <li><strong>GitLab CI/CD</strong></li>
+                            <li><strong>Git</strong></li>
+                            <li><strong>Tableau</strong></li>
+                            <li><strong>Power BI</strong></li>
+                        </ul>
+                    </div>
+
+                </div>
 
             </div>
-
         </div>
-
     </section>
 
     <section class="sectionsetting" id="Portfolio">
@@ -249,16 +287,16 @@
                             <div class="portfolioitem_description">
 
                                 <h3>
-                                    <a href="YOUR_REPO_LINK">
+                                    <a href="https://github.com/hanshenghuang/WorkforceAnalyticsDbt">
                                         Workforce Analytics Platform
                                     </a>
                                 </h3>
 
                                 <span>
-                                    Built a workforce analytics platform using dbt,
-                                    DuckDB, and Power BI. Implemented a Bronze-Silver-Gold
-                                    data model to transform employee badge access records
-                                    into attendance, lateness, and organizational analytics.
+                                    Built a workforce analytics platform using dbt and DuckDB, 
+                                    with a Bronze-Silver-Gold architecture for attendance,
+                                    working hours, and lateness analysis. Developed Tableau
+                                    dashboards to visualize workforce insights.
                                 </span>
 
                             </div>
@@ -270,28 +308,46 @@
                         <li class="portfolioitem">
                                 <div class="portfolioitem_description">
                                     <h3><a href="https://github.com/hanshenghuang/LocationSelectionProject">Business Analytics</a></h3>
-                                    <span>Analyzed location selection for hand-shake beverages stores in Taipei using open government data.</span>
+                                    <span>
+                                        Developed a machine learning-based location selection system
+                                        for Taipei beverage stores using open government data. 
+                                        Compared multiple models and built a Python application 
+                                        to predict store success.
+                                    </span>
                                 </div>
                                 <img src="/pic/LocationSelection.png" alt="LocationSelection">
                         </li>
                         <li class="portfolioitem">
-                                <div class="portfolioitem_description">
-                                    <h3><a href="https://github.com/hanshenghuang/C_Sharp/tree/main/BinPackingSolver">Algorithm Implementation</a></h3>
-                                    <span>Developed a WinForms application in C# to solve bin packing problems (BPP) using the First-Fit algorithm (FF) and Grouping Genetic Algorithm (GGA).</span>
-                                </div>
-                                <img src="/pic/BPP_Image_4.png" alt="XRay_Classification">
-                        </li>
-                        <li class="portfolioitem">
                             <div class="portfolioitem_description">
                                 <h3><a href="https://github.com/hanshenghuang/XRayImageClassificationProject">Image Recognition</a></h3>
-                                <span>Built an AI model to detect COVID-19 from chest X-ray images and used LIME and Grad-CAM to interpret the neural network's predictions.</span>
+                                <span>
+                                    Evaluated multiple deep learning architectures 
+                                    for COVID-19 detection from chest X-ray images 
+                                    and compared their classification performance. 
+                                    Applied LIME and Grad-CAM to visualize model predictions 
+                                    and improve interpretability.
+                                </span>
                             </div>
                             <img src="/pic/CovidDetection.PNG" alt="XRay_Classification">
                         </li>
                         <li class="portfolioitem">
                                 <div class="portfolioitem_description">
+                                    <h3><a href="https://github.com/hanshenghuang/C_Sharp/tree/main/BinPackingSolver">Algorithm Implementation</a></h3>
+                                    <span>
+                                        Developed a WinForms application in C# 
+                                        to solve bin packing problems (BPP) using the First-Fit algorithm (FF) 
+                                        and Grouping Genetic Algorithm (GGA).
+                                    </span>
+                                </div>
+                                <img src="/pic/BPP_Image_4.png" alt="XRay_Classification">
+                        </li>
+                        <li class="portfolioitem">
+                                <div class="portfolioitem_description">
                                     <h3><a href="https://github.com/hanshenghuang/PowerEfficiencyPrediction">Data Analytics</a></h3>
-                                    <span>Predicted solar power generation using weather forecast data and machine learning techniques.</span>
+                                    <span>
+                                        Predicted solar power generation using weather forecast data 
+                                        and machine learning techniques.
+                                    </span>
                                 </div>
                                 <img src="/pic/PowerEfficiencyPrediction.png" alt="PowerEfficiencyPrediction">
                         </li>
@@ -312,19 +368,19 @@
 
             <div class="experienceitem">
                 <h3>University of California, Berkeley</h3>
-                <p>Master of Analytics</p>
-                <p>08/2026 - 08/2027</p>
+                <p>Master of Analytics,, Industrial Engineering & Operations Research</p>
+                <p>08/2026 - 05/2027</p>
             </div>
 
             <div class="experienceitem">
                 <h3>National Taiwan University</h3>
-                <p>MBA in Information Management</p>
+                <p>Master of Business Administration, Information Management</p>
                 <p>09/2020 - 06/2022</p>
             </div>
 
             <div class="experienceitem">
                 <h3>National Cheng Kung University</h3>
-                <p>Bachelor of Management Science</p>
+                <p>Bachelor of Management Science, Industrial and Information Management</p>
                 <p>09/2016 - 06/2020</p>
             </div>
 
