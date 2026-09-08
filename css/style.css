@@ -372,6 +372,10 @@ p{
 }
 
 @media screen and (max-width:480px){
+    h1{
+        font-size:clamp(1.8rem, 8vw, 2.5rem);
+        white-space:nowrap;
+    }
 
     h2{
         font-size:2rem;
